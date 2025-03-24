@@ -14,7 +14,7 @@ export default function Account() {
             <div className="d-flex flex-column align-items-center mt-5">
                 <img
                     className="rounded-pill object-fit-cover me-2"
-                    src={avatarUrl || '/public/img-default.jpg'}
+                    src={avatarUrl || '/img-default.jpg'}
                     style={{ height: 150, width: 150 }}
                     alt="Avatar"
                 />

@@ -18,7 +18,7 @@ export default function ReviewsCard({ game_id }) {
         try {
             const { data: reviews, error } = await supabase
                 .from("reviews")
-                .select("*")
+                .select("*, profiles(username, avatar_url)")
                 .eq("game_id", game_id);
             if (error) throw error;
             setReviews(reviews);
@@ -32,6 +32,9 @@ export default function ReviewsCard({ game_id }) {
         if (game_id) readRev();
     }, [game_id]);
 
+    console.log(avatarUrl);
+
+
     return (
         <>
             <div className="row gap-3 justify-content-center align-items-center">
@@ -42,13 +45,12 @@ export default function ReviewsCard({ game_id }) {
                 </div>
                 {reviews &&
                     reviews.map((review) => (
-                        <div className='w-100'>
+                        <div className='w-100' key={review.id}>
                             <div className="d-flex flex-column flex-lg-row p-2 c-bg-lightDark rounded-2">
-
                                 <div className="col-12 col-md-4 d-flex gap-3">
                                     <img
                                         className="object-fit-cover ms-2"
-                                        src={avatarUrl || '/img-default.jpg'}
+                                        src={review.profiles.avatar_url || '/img-default.jpg'}
                                         style={{ height: 80, width: 80 }}
                                         alt="Avatar"
                                     />
