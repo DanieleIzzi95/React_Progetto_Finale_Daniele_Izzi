@@ -48,7 +48,7 @@ export default function ReviewsCard({ game_id }) {
                                 <div className="col-12 col-md-4 d-flex gap-3">
                                     <img
                                         className="object-fit-cover ms-2"
-                                        src={avatarUrl || '/public/img-default.jpg'}
+                                        src={avatarUrl || '/img-default.jpg'}
                                         style={{ height: 80, width: 80 }}
                                         alt="Avatar"
                                     />
