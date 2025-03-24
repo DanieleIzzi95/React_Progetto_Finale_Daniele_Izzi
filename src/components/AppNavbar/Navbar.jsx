@@ -40,7 +40,7 @@ export default function Navbar() {
                                 {user ? (
                                     <img
                                         className="rounded-pill object-fit-cover me-2"
-                                        src={avatarUrl || '/public/img-default.jpg'}
+                                        src={avatarUrl || '/img-default.jpg'}
                                         style={{ height: 40, width: 40 }}
                                         alt="Avatar"
                                     />

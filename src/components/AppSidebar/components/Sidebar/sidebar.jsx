@@ -19,7 +19,7 @@ export default function Sidebar() {
                 <div className=" d-flex align-items-center c-bg-lightDark rounded-3 px-2 py-1 me-2">
                     <img
                         className="rounded-pill object-fit-cover"
-                        src={avatarUrl || '/public/img-default.jpg'}
+                        src={avatarUrl || '/img-default.jpg'}
                         style={{ height: 20, width: 20 }}
                         alt="Avatar"
                     />
