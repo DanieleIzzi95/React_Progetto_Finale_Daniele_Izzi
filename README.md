@@ -74,4 +74,4 @@ L'applicazione è costruita seguendo standard di codice moderno come custom hook
 
 ## Link del progetto
 
-- Link: 
+- Link: https://react-progetto-finale-daniele-izzi.vercel.app/
